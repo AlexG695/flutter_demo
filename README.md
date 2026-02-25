@@ -1,16 +1,18 @@
-# multiplatform_demo
+## Despliegue validado 
 
-A new Flutter project.
+### Plataforma Web (Vercel)
+- URL: https://flutter-demo-gamma.vercel.app/
+- Proceso: 
+  1. `flutter build web --release`
+  2. Conectar repo GitHub a Vercel
+  3. Configurar Output Directory: `build/web`
+  4. Deploy automático
 
-## Getting Started
+### Plataforma Android
+- Proceso:
+  1. `flutter devices` (ver dispositivos)
+  2. `flutter run -d <device_id>`
+- Capturas: `/screenshots/device.png`, `/screenshots/image.png`
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Consistencia
+La interfaz mantiene el mismo diseño y funcionalidad (tabs, lista, formulario) en ambos entornos.
